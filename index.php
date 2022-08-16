@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
-<?php require 'students.php'; ?>
+<?php
+require 'students.php';
+require 'teachers.php';
+?>
 
 <head>
     <meta charset="utf-8">
@@ -28,7 +31,7 @@
     <!-- STUDENTS TROMBINOSCOPE GENERATE ON PHP -->
 
     <div id="trombi" class="trombi">
-        <?php include 'trombi.php'; ?>
+        <?php include 'trombiStudent.php'; ?>
     </div>
 
     <!-- BUTTON FOR RANDOM PRESENTATION -->
@@ -68,35 +71,11 @@
             </div>
         </div>
 
-    <!-- TEACHERS TROMBINOSCOPE -->
+    <!-- TEACHERS TROMBINOSCOPE GENERATE ON PHP-->
 
         <h2 class="training">Nos formateurs</h2>
         <div class="globalteacher">
-            <div>
-                <div><img src="./media/pictures/romain-1-red.png" class="teacher" alt="photo-romain"></div>
-                <p class="nameteacher">Romain Guillemot</p>
-                <p class="job">Formateur PHP/Symphony</p>
-            </div>
-            <div>
-                <div><img src="./media/pictures/robin-1-red.png" class="teacher" alt="photo-robin"></div>
-                <p class="nameteacher">Robin Jonval</p>
-                <p class="job">Teaching Assistant</p>
-            </div>
-            <div>
-                <div><img src="./media/pictures/samra-1-red.png" class="teacher" alt="photo-samra "></div>
-                <p class="nameteacher">Samra Adrar</p>
-                <p class="job">Student Experience</p>
-            </div>
-            <div>
-                <div><img src="./media/pictures/nicolas-1-red.png" class="teacher" alt="photo-nicolas "></div>
-                <p class="nameteacher">Nicolas Robichet</p>
-                <p class="job">Carrer Specialist</p>
-            </div>
-            <div>
-                <div><img src="./media/pictures/clara-1-red.png" class="teacher" alt="photo-clara "></div>
-                <p class="nameteacher">Clara Jouclard</p>
-                <p class="job">Regional Manager Grand Est</p>
-            </div>
+            <?php include 'trombiTeacher.php'; ?>
         </div>
     </div>
 

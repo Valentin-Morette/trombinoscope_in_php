@@ -1,13 +1,12 @@
 <?php
 
-class Student
+require_once 'Person.php';
+
+class Student extends Person
 {
-  private string $firstname;
-  private string $name;
   private string $age;
   private string $city;
   private string $mobility;
-  private string $pictureRed;
   private string $pictureWhite;
   private string $desc;
   private string $skills;
@@ -40,16 +39,6 @@ class Student
     $this->github = $github;
   }
 
-  public function getFirstname(): string
-  {
-    return $this->firstname;
-  }
-
-  public function getName(): string
-  {
-    return $this->name;
-  }
-
   public function getAge(): string
   {
     return $this->age;
@@ -63,11 +52,6 @@ class Student
   public function getMobility(): string
   {
     return $this->mobility;
-  }
-
-  public function getPictureRed(): string
-  {
-    return $this->pictureRed;
   }
 
   public function getPictureWhite(): string
